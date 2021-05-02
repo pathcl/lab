@@ -13,7 +13,7 @@ plan:
 
 init:
 	mkdir $(HOME)/.kube
-	go get sigs.k8s.io/kind@v0.10.0
+	go get sigs.k8s.io/kind
 	kind create cluster --config kind.yml
 	kind export kubeconfig --kubeconfig $(HOME)/.kube/kind
 	kubectl --kubeconfig $(HOME)/.kube/kind apply -f https://docs.projectcalico.org/manifests/calico.yaml

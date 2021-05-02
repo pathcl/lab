@@ -6,7 +6,7 @@
 ## Why?
 
 I decided to go for terraform/helm since it provides a good level of abstraction around a common language: HCL. Also providers (helm/kubernetes/acme)
-has been improved lately. Having one single tool also reduces the cognitive load.
+has been improved lately. Having one single tool reduces the cognitive load.
 
 [Keda](https://keda.sh) thesedays already supports prometheus metrics as one source of scaling applications. Compared to common HPA gives much more granularity basically we can instrument our application as we want and then describe an ScaledObject referring to which metric should be used.
 

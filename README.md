@@ -3,7 +3,7 @@
     $ make init
     $ make build
 
-## Motivations
+## Why?
 
 I decided to go for terraform/helm since it provides a good level of abstraction around a common language: HCL. Also providers (helm/kubernetes/acme)
 has been improved lately. Having one single tool also reduces the cognitive load.

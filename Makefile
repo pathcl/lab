@@ -12,6 +12,7 @@ plan:
 	terraform plan
 
 init:
+	mkdir $(HOME)/.kube
 	kind create cluster --config kind.yml
-	kind export kubeconfig --kubeconfig /home/pathcl/.kube/kind
-	kubectl --kubeconfig /home/pathcl/.kube/kind apply -f https://docs.projectcalico.org/manifests/calico.yaml
+	kind export kubeconfig --kubeconfig $(HOME)/.kube/kind
+	kubectl --kubeconfig $(HOME)/.kube/kind apply -f https://docs.projectcalico.org/manifests/calico.yaml

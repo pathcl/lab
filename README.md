@@ -14,7 +14,7 @@ Modsecurity and nginx was configured on defaults but is enough to prove it works
 
 Dashboard was taken from grafana.com [nginx-ingress](https://grafana.com/grafana/dashboards/9614).
 
-Regarding performance/security protections there's some configuration around LimitRange, NetworkPolicies. Kyverno/OPA might also be worth considering.
+Regarding performance/security protections there's some configuration around LimitRange, NetworkPolicies, PodDisruptionBudget. Kyverno/OPA might also be worth considering.
 
 
 ## TODO: 

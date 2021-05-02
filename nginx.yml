@@ -1,0 +1,36 @@
+controller:
+  config:
+    enable-modsecurity: "true"
+    enable-owasp-modsecurity-crs: "true"
+  service:
+    annotations: {}
+    clusterIP: ""
+    enableHttp: true
+    enableHttps: true
+    enabled: true
+    externalIPs: []
+    externalTrafficPolicy: Local
+    healthCheckNodePort: 0
+    internal:
+      annotations: {}
+      enabled: false
+    labels: {}
+    loadBalancerIP: ""
+    loadBalancerSourceRanges: []
+    nodePorts:
+      http: 30080
+      https: 30443
+      udp: {}
+    omitClusterIP: false
+    ports:
+      http: 80
+      https: 443
+    sessionAffinity: ""
+    targetPorts:
+      http: http
+      https: https
+    type: NodePort
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
